@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/e960c64a-8e2f-4070-95f9-f17cb7a74cb9/1FDD4918-53F5-4BE2-BD6C-C2FF7C44EAE5-removebg-preview.png?v=1648922804969"
+    />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Elea Health</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!--     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <!-- Import the webpage's javascript file -->
+    <script src="javascript/script.js" defer></script>
+    <script src="javascript/quiz.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!--    <script src="javascript/carousel.js" defer></script> -->
+    <!--     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!--     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+  </head>
+
+<!--   <style>
+    /* The container */
+    .container {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+      background-color: #2196f3;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .container input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  </style> -->
+  <body>
+    <center>
+      <h1 class="title">
+        <table>
+          <tr>
+            <th>
+              <img
+                class="logo"
+                href="index.html"
+                src="https://cdn.glitch.global/e960c64a-8e2f-4070-95f9-f17cb7a74cb9/1FDD4918-53F5-4BE2-BD6C-C2FF7C44EAE5-removebg-preview.png?v=1648922804969"
+              />
+            </th>
+            <th>Elea Health</th>
+          </tr>
+        </table>
+      </h1>
+    </center>
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="topnav" id="myTopnav">
+          <a href="index.html"> Home </a> 
+          <a class="active"  href="quiz.html"> Symptoms Quiz </a>
+          <a href ="learnMore.html"> Learn More </a>
+          <a href ="donate.html"> Donate</a>
+<!--           <a href="profile.html"> Your Profile </a> -->
+<!--           <a href="about.html"> About </a> -->
+          <a href ="database.html"> Find Women's Health Clinics</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          
+        </div>
+    <div style="background-image: url('https://img.wallpapersafari.com/desktop/1280/1024/93/27/vB9g84.jpg')">
+    
+<div class="more-space">
+  
+  
+  
+
+    
+  
+  
+    <center>
+      <p class="quiz-para">
+        Please take this quiz to help identify the cause of your symptoms. This
+        quiz is fully anonymous and does not store your answers. Results are not
+        shared. DISCLAIMER: Always confirm results with a doctor.
+      </p>
+      <br>
+      <br>
+      <a href="missedPeriod.html" class="button">Take Quiz Now</a>
+    </center>
+  </div>
+    </div>
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              Elea Health <i>CODE WANTS TO BE SIMPLE </i> is an initiative to
+              help the upcoming programmers with the code. Scanfcode focuses on
+              providing the most efficient code or snippets as the code wants to
+              be simple. We will help programmers build up concepts in different
+              programming languages that include C, C++, Java, HTML, CSS,
+              Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Our Pages</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="http://scanfcode.com/category/c-language/">Home</a>
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/front-end-development/"
+                  >Find Common Symptoms</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/back-end-development/"
+                  >Learn More</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://scanfcode.com/category/java-programming-language/"
+                  >Donate</a
+                >
+              </li>
+              <!--               <li><a href="http://scanfcode.com/category/android/">Android</a></li> -->
+              <!--               <li><a href="http://scanfcode.com/category/templates/">Templates</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Other Resources</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="http://scanfcode.com/about/">Planned Parenthood</a>
+              </li>
+              <li><a href="http://scanfcode.com/contact/">Mayo Clinic</a></li>
+              <!--               <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li> -->
+              <!--               <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li> -->
+              <!--               <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <!--             <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+         <a href="#">Scanfcode</a>. -->
+            <p class="copyright-text">
+              <a href="#">Elea Health</a> &copy; 2022
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <!--               <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li> -->
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
