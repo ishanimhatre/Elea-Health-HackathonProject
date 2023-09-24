@@ -1,6 +1,7 @@
 # Welcome to Elea Health
 
-# Devpost Link: https://devpost.com/software/elea-health
+## Devpost Link: 
+https://devpost.com/software/elea-health
 
 ## Inspiration
 We were inspired by a statistic we discovered which stated that 23 women drop out of school due to poor menstruation management. There is a stigma that exists for women when discussing reproductive health and menstruation. Many times the reluctance of women to seek a medical professional can lead to the health issue or problem worsening. Furthermore, in many developing countries, women do not always have access to adequate education about women’s health. We wanted to build a website to include important statistics to raise awareness about this issue and to allow users to take a quiz to check for common symptoms before being referred to a medical professional. For our logo, we wanted to show the unity between women. This is why we included a joint hand logo holding a heart to represent the need for change. We also named our company Elea after the Greek goddess of healing.
